@@ -24,6 +24,10 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import codePush from 'react-native-code-push';
+
+let codePushOption = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
+
 const App = () => {
   return (
     <Fragment>
@@ -111,4 +115,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default codePush(codePushOption)(App);
