@@ -26,7 +26,7 @@ import {
 
 import codePush from 'react-native-code-push';
 
-let codePushOption = { checkFrequency: codePush.CheckFrequency.ON_APP_START };
+let codePushOption = {};
 
 const App = () => {
   return (
