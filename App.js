@@ -6,7 +6,7 @@ import {
 import codePush from 'react-native-code-push';
 
 let codePushOption = {
-  checkFrequency: codePush.CheckFrequency.ON_APP_START
+  // checkFrequency: codePush.CheckFrequency.ON_APP_START
 }
 
 class App extends React.Component {
@@ -19,4 +19,4 @@ class App extends React.Component {
   }
 }
 
-export default codePush(codePushOption)(App);
+export default App;
